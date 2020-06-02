@@ -13,4 +13,22 @@
 
 Route::get('/', function () {
     return view('welcome');
+    
+});
+
+
+Route::get('actualites', 'ActualitesController@liste');
+
+Route::get('/evenements', function () {
+    return view('evenements');   
+});
+
+Route::get('/apprenants', function () {
+    return view('apprenants');
+    
+});
+
+Route::get('/allumnis', function () {
+    return view('allumnis');
+    
 });
