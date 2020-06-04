@@ -19,16 +19,20 @@ Route::get('/', function () {
 
 Route::get('actualites', 'ActualitesController@liste');
 
-Route::get('/evenements', function () {
-    return view('evenements');   
-});
+Route::get('/evenements','EvenementsController@liste');
 
-Route::get('/apprenants', function () {
-    return view('apprenants');
-    
-});
+Route::get('/apprenants','ApprenantsController@liste');
 
 Route::get('/allumnis', function () {
     return view('allumnis');
-    
 });
+
+Route::post('actualites','ActualitesController@stock');
+Route::post('/evenements','EvenementsController@stock');
+Route::post('apprenants','ApprenantsController@stock');
+
+
+// Route::get('/apprenants', function () {
+//     return view('apprenants');
+    
+// });

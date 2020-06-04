@@ -18,17 +18,18 @@
             *{
                 padding:0px;
                 margin:0px;
+                height:auto;
             }
            
 
              .foot{
                 width:100%;
-                 height:170px;
-                margin-bottom:-50%;
+                 height:35%;
+                margin-top:50%;
                  background-color:black;
              }
              .footpad{
-                margin-top:24%;
+                margin-top:90%;
              }
              .footbar{
                 width:100%;

@@ -15,13 +15,25 @@
 
         <!-- Styles -->
         <style>
-            *{
+         
+         body{
+              height:100%;
+              margin-bottom:-900px;
+          }
+            /* *{ 
                 padding:0px;
-                margin:0px;
-            }
-             div{
+                margin-bottom:0px;
+            } */
+             .containers{
                  width:100%;
+                 height:auto;
+                 
              }
+             
+             .marge{
+                 margin-bottom:-50%;
+             }
+
              .bar{
                  width:100%;
                  background-color:black;
@@ -57,7 +69,7 @@
     </head>
     <body>
        
-        <div class="" >
+        <div class="containers " >
              <div class="" >
               
              <ul class="pl-5 bar " >
@@ -70,17 +82,17 @@
            </ul> 
            <div class="menubar"> </div>
              </div>  
-             @yield('content')
+            <div class="container marge" >  @yield('content') </div> 
         </div>
            
           <div  class="footpad ">
              
-               <div class="foot " >  
-               <div class="footbar  "> </div>
-                 <p>copyrightaaa @simplon/Auf All right reserved</p>
-               </div>
           </div>
 
+          <div class="foot " >  
+               <div class="footbar  "> </div>
+                <h4> <p>copyright@simplon/Auf 2020-2021 All right reserved</p></h4>
+               </div>
         <script src=" {{ asset('js/jquery-3.4.1.min.js') }} "></script>
          <script src="{{ asset('js/myjava.js') }}"></script>
     </body>
