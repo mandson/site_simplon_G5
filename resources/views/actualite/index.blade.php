@@ -47,12 +47,12 @@
 
 <hr><br>
 <div class="row mb-5 container-fluid " ><ul>
-<h2>Nos Actualite du mois</h2>
+<!-- <h2>Nos Actualite du mois</h2>
 @foreach(  $une_actu as  $une_actu)
 <div><li> <h4>titre de l'ACTU:</h4> <h5>{{ $une_actu->titre}}  </h5>    </li>
 </div>
 @endforeach 
-</ul>
+</ul> -->
 <hr>
 </div><br><br> <br>
 
@@ -65,7 +65,7 @@
    <div class="esapace_milieu2 " >  <h1 class="ml-2" >ADMINISTRATION>Actualités</h1>
 
 
-  <form action="/actualites"  method="POST" >
+  <form action="/actualites"  method="POST"  enctype="multipart/form-data" >
               @csrf
              <div class="form-group">
                 <label for="exampleFormControlInput1">Titre</label>

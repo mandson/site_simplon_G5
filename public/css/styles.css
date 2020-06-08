@@ -1,0 +1,138 @@
+/*
+    Style du @header
+*/
+
+.haut
+{
+    font-size: 13px;
+    color: rgba(0,0,0,.5);
+    padding: 0 5px;
+}
+.rowg
+{
+    margin: 15px 0px 0px 0px;
+    border-bottom: 0px solid rgba(201, 197, 197, 0.596);
+    box-shadow: 1px 1px 0.5px rgba(0, 0, 0, 0.466);
+}
+
+.lienG:hover
+{
+    text-decoration: none;
+    color: #ff0000;
+    justify-content: space-between;
+}
+
+nav .lienB
+{
+    padding: 0px 15px;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.856);
+    border-right: 4px solid #ce0033;
+    border-left: 4px solid #ce0033;
+}
+
+nav .lienB:hover
+{
+    color: #ff0000 !important;
+}
+nav .lienB:active
+{
+    color: #ff0000 !important;
+}
+
+nav #actu
+{
+    padding: 0px 15px;
+    border: none;
+}
+
+.menu 
+{
+    margin-left: 18px;
+}
+
+.btn-image 
+{    
+    color: transparent !important;
+    border-color: #ce0033 !important;
+}
+
+.btn-image:hover
+{
+    background-color: transparent !important;
+    border-color: #ce0033 !important;
+}
+
+.btn-image :focus
+{
+    border-color: #ce0033 !important;
+}
+/*
+    styles du @banier
+*/
+
+.ban
+{
+    margin-top: 30px;
+	height: 500px;
+	width: 100%;
+	background-image: url(../image/baniere.jpg);
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+/*
+    styles du @Body
+*/
+
+.titre
+{
+    border: 1px solid #ce0033;
+    color: #fff;
+    font-size: 20px;
+    background-color: #ce0033;
+    padding: 5px;
+    width: 115px;
+    margin-left: 10px;
+}
+
+/*
+    styles du @Footer
+*/
+
+footer
+{
+    margin-top: 50px;
+}
+
+.sect
+{
+    margin: 35px 0px;
+    border-bottom: 3px solid #ce0033;
+    padding-left: 30px;
+}
+
+.sect a
+{
+    color: black;
+    font-size: 17px;
+}
+
+.sect a:hover
+{
+    text-decoration: none;
+    color: #ff0000;
+}
+
+.cardG
+{
+    border: none !important;
+}
+
+.card1 
+{
+    background-color: #fff !important;
+    border: none;
+}

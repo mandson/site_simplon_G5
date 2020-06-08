@@ -75,10 +75,10 @@
              <ul class="pl-5 bar " >
                <li> <img src=" {{asset('img/logo_simplon.png')}} " alt=""></li>
                <li><a href="/" class="av1" >ACCUEIL</a></li>
-               <li><a href="actualites" class="av2">ACTUALITES</a></li>
-               <li><a href="evenements" class="av3">EVENEMENTS</a></li>
-               <li><a href="apprenants" class="av4">APPRENANTS</a></li>
-               <li><a href="allumnis" class="av5">ALLUMNIS</a></li>
+               <li><a href="store_actualite" class="av2">ACTUALITES</a></li>
+               <li><a href="store_evenements" class="av3">EVENEMENTS</a></li>
+               <li><a href="store_apprenants" class="av4">APPRENANTS</a></li>
+               <li><a href="store_allumnis" class="av5">ALLUMNIS</a></li>
            </ul> 
            <div class="menubar"> </div>
              </div>  
@@ -91,8 +91,9 @@
 
           <div class="foot " >  
                <div class="footbar  "> </div>
-                <h4> <p>copyright@simplon/Auf 2020-2021 All right reserved</p></h4>
+                <h4> <p>&#9400;copyright Simplon/Auf 2020-2021 All right reserved</p></h4>
                </div>
+               
         <script src=" {{ asset('js/jquery-3.4.1.min.js') }} "></script>
          <script src="{{ asset('js/myjava.js') }}"></script>
     </body>
