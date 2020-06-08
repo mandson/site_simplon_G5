@@ -8,7 +8,7 @@ class StoreActualiteController extends Controller
 {
     //
     function index() { $data = actualites::latest()->paginate(5);
-        return view('store_actualite', compact('data')) ->with('i', (request()->input('page', 1) - 1) * 5); }
+        return view('vi_actualite', compact('data')) ->with('i', (request()->input('page', 1) - 1) * 5); }
     
     function insert_image(Request $request) { $request->validate([ 'actu_titre' => 'required', 'actu_description' => 'required',  'actu_image'  ]);
        

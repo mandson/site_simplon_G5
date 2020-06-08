@@ -32,7 +32,7 @@
    
     <div class="panel-body"> <div class="table-responsive">
               <table class="table table-bordered table-striped"> 
-              <tr> <th width="30%">Image</th> <th width="30%">Titre</th> <th width="100%">Evenement</th> </tr> @foreach($data as $row) <tr> 
+              <tr> <th width="30%">Image</th> <th width="30%">Titre</th> <th width="100%">Detail</th> </tr> @foreach($data as $row) <tr> 
               
               <td> <img src="store_actualite/fetch_image/{{ $row->id }}" class="img-thumbnail" width="100" /> </td> <td>{{ $row->actu_titre }}</td> <td>{{ $row->actu_description }}</td> 
               </tr> @endforeach </table> {!! $data->links() !!} </div> 

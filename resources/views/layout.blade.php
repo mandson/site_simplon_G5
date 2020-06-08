@@ -74,7 +74,7 @@
               
              <ul class="pl-5 bar " >
                <li> <img src=" {{asset('img/logo_simplon.png')}} " alt=""></li>
-               <li><a href="/" class="av1" >ACCUEIL</a></li>
+               <li><a href="administration" class="av1" >ACCUEIL</a></li>
                <li><a href="store_actualite" class="av2">ACTUALITES</a></li>
                <li><a href="store_evenements" class="av3">EVENEMENTS</a></li>
                <li><a href="store_apprenants" class="av4">APPRENANTS</a></li>

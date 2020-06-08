@@ -14,22 +14,23 @@
 
 
    // *****************Route vers les pages Visiteurs*************
-Route::get('/v', function () {
+Route::get('/', function () {
     return view('../../actualite/visiteur/accueil');
 });
 
-Route::get('vi_actualite', function () {
-    return view('../../actualite/visiteur/vi_actualite');
-});
+// Route::get('vi_actualite', function () {
+//     return view('../../actualite/visiteur/vi_actualite');
+// });
 
-Route::get('vi_apprenants', function () {
-    return view('../../actualite/visiteur/vi_apprenants');
-});
+// Route::get('vi_apprenants', function () {
+//     return view('../../actualite/visiteur/vi_apprenants');
+// });
 
 
 // Route::get('vi_actualite', 'Vi_actualitesController@index');
 // Route::get('vi_actualite', 'Vi_actualitesController@insert_image');
-// Route::get('vi_actualite', 'Vi_actualitesController@fetch_image');
+Route::get('vi_actualite', 'Vi_actualitesController@index');
+Route::get('vi_actualite/fetch_image/{id}', 'Vi_actualitesController@fetch_image');
 //*****************FIN Route vers les pages de gestion Visiteurs*************
 
 
@@ -51,7 +52,7 @@ Route::get('vi_apprenants', function () {
 
 //***************** FIN Route vers les pages de gestion Administration*************
 
-Route::get('/', function () {
+Route::get('administration', function () {
     return view('welcome');
     
 });
