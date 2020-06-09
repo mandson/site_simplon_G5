@@ -1,14 +1,15 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use Illuminate\Support\Facades\Response; use App\Apprenants; use Image;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Response; use App\Actualites; use Image;
-class StoreActualiteController extends Controller
+
+class Vi_apprenantsController extends Controller
 {
     //
-    function index() { $data = actualites::latest()->paginate(5);
-        return view('store_actualite', compact('data')) ->with('i', (request()->input('page', 1) - 1) * 5); }
+
+    function index() { $data =  apprenants::latest()->paginate(5);
+        return view('../../actualite/visiteur/vi_apprenants', compact('data')) ->with('i', (request()->input('page', 1) - 1) * 5); }
     
     function insert_image(Request $request) { $request->validate([ 'actu_titre' => 'required', 'actu_description' => 'required',  'actu_image'  ]);
        
